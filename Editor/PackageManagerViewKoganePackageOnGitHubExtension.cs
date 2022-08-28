@@ -42,7 +42,7 @@ namespace Kogane.Internal
         void IPackageManagerExtension.OnPackageSelectionChange( PackageInfo packageInfo )
         {
             m_selectedPackageInfo = packageInfo;
-            m_button.visible      = packageInfo.author.name == "baba-s";
+            m_button.visible      = packageInfo is { author: { name: "baba-s" } };
         }
 
         void IPackageManagerExtension.OnPackageAddedOrUpdated( PackageInfo packageInfo )
