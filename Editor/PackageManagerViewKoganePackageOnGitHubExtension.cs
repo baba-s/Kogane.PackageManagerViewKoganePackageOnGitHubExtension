@@ -1,4 +1,4 @@
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -22,7 +22,7 @@ namespace Kogane.Internal
 
         VisualElement IPackageManagerExtension.CreateExtensionUI()
         {
-            m_button = new Button
+            m_button = new
             (
                 () =>
                 {
